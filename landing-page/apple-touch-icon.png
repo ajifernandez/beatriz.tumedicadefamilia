@@ -6,7 +6,10 @@
     </linearGradient>
   </defs>
   <rect width="180" height="180" rx="20" fill="url(#bg)"/>
-  <circle cx="90" cy="65" r="25" fill="white"/>
-  <circle cx="90" cy="125" r="8" fill="white"/>
-  <rect x="55" y="135" width="70" height="12" rx="6" fill="white" opacity="0.8"/>
+  <!-- Professional silhouette inspired by the hero photo -->
+  <circle cx="90" cy="55" r="25" fill="white"/>
+  <path d="M55 125c0-19 15.5-34.5 34.5-34.5s34.5 15.5 34.5 34.5v25H55v-25z" fill="white"/>
+  <!-- Medical cross symbol -->
+  <rect x="135" y="30" width="10" height="30" fill="white" opacity="0.8"/>
+  <rect x="125" y="35" width="30" height="10" fill="white" opacity="0.8"/>
 </svg>
