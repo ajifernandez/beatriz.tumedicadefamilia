@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <url>
+        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/hero.jpg</image:loc>
+            <image:title>Dra. Beatriz Jiménez Canet - Médica de Familia</image:title>
+            <image:caption>Dra. Beatriz Jiménez Canet realizando ecografía clínica en consulta</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/reception.jpg</image:loc>
+            <image:title>Consulta Médica Dra. Beatriz Jiménez</image:title>
+            <image:caption>Consulta médica acogedora de la Dra. Beatriz Jiménez en Motril</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/#sobre-mi</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/#servicios</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/#aseguradoras</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/#testimonios</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/#redes-sociales</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>
