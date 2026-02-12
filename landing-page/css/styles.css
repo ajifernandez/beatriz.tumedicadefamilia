@@ -918,6 +918,12 @@ h2 {
     font-size: 0.85rem;
     color: #666;
 }
+svg {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 .social-link:hover {
     transform: translateY(-8px);
     border-color: var(--primary-color);
