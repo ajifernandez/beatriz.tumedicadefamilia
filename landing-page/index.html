@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Dra. Beatriz Jiménez Canet - Médica de Familia en Motril | Ecografía Clínica</title>
-    <meta name="description" content="Dra. Beatriz Jiménez Canet: Médica de familia con experiencia en sanidad pública y privada en Motril. Atención cercana, ecografía clínica y chequeos personalizados. Adeslas, Sanitas, Asisa.">
+    <title>Dra. Beatriz Jiménez Canet | Médica de Familia en Motril</title>
+    <meta name="description" content="Dra. Beatriz Jiménez Canet: Médica de familia en Motril. Atención cercana, ecografía clínica y chequeos personalizados. Concertada con Adeslas, Sanitas y Asisa.">
     <meta name="keywords" content="médica de familia, medicina familiar, ecografía clínica, Motril, Granada, Dra. Beatriz Jiménez, consulta médica, chequeos salud, Adeslas, Sanitas, Asisa, Mapfre, DKV">
     <meta name="author" content="Dra. Beatriz Jiménez Canet">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -95,12 +95,40 @@
                 }
             ]
         },
-        "acceptsHealthPlans": [
-            "Adeslas",
-            "Sanitas", 
-            "Asisa",
-            "Mapfre",
-            "DKV"
+        "image": "https://beatriztumedicadefamilia.familia-jimenez.es/images/hero.jpg",
+        "priceRange": "€€",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "36.7453",
+            "longitude": "-3.5171"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "12:00"
+            }
+        ],
+        "hospitalAffiliation": {
+            "@type": "MedicalOrganization",
+            "name": "Contigo Centro Médico",
+            "url": "https://contigocentromedico.familia-jimenez.es/"
+        },
+        "sameAs": [
+            "https://instagram.com/beatriz.tumedicadefamilia"
         ],
         "knowsLanguage": [
             {
@@ -128,6 +156,10 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Preload Fonts (Self-hosting recommended for best performance) -->
+    <!-- <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin> -->
+    <!-- <link rel="preload" href="fonts/playfair-display-bold.woff2" as="font" type="font/woff2" crossorigin> -->
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
@@ -162,6 +194,7 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#redes-sociales">Redes Sociales</a></li>
+                <li><a href="#contacto">Cita y Ubicación</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -175,12 +208,15 @@
     <header class="hero">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1>Dra. Beatriz Jiménez Canet - Médica de Familia en Motril</h1>
+                <h1>Dra. Beatriz Jiménez Canet, Médica de Familia en Motril</h1>
                 <p>Medicina de familia con dedicación, empatía y la última tecnología en diagnóstico. Atención cercana, ecografía clínica y chequeos personalizados.</p>
-                <a href="#servicios" class="btn btn-primary">Conocer más</a>
+                <div class="hero-btns">
+                    <a href="https://wa.me/34623614167" class="btn btn-primary"><span class="btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span> WhatsApp</a>
+                    <a href="tel:+34958876016" class="btn btn-outline"><span class="btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span> Llamar</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="images/hero.jpg" alt="Dra. Beatriz Jiménez Canet - Médica de familia realizando ecografía clínica en consulta" width="600" height="800" loading="eager" onerror="this.src='https://placehold.co/600x800?text=Dra.+Beatriz+Jiménez+Canet';">
+                <img src="images/hero.jpg" alt="Dra. Beatriz Jiménez Canet - Médica de familia realizando ecografía clínica en consulta" width="600" height="800" loading="eager" fetchpriority="high" onerror="this.src='https://placehold.co/600x800?text=Dra.+Beatriz+Jiménez+Canet';">
             </div>
         </div>
     </header>
@@ -242,8 +278,8 @@
     <section id="servicios" class="section services">
         <div class="container">
             <div class="section-header">
-                <h2>Servicios Médicos</h2>
-                <p>Un enfoque integral para tu salud y la de tu familia en Motril.</p>
+                <h2>Servicios Médicos en Motril</h2>
+                <p>Un enfoque integral para tu salud y la de tu familia en la Costa Tropical.</p>
             </div>
             <div class="services-grid">
                 <article class="service-card">
@@ -274,8 +310,8 @@
     <section id="aseguradoras" class="section insurances">
         <div class="container">
             <div class="section-header">
-                <h2>Aseguradoras Médicas</h2>
-                <p>Trabajo con las principales compañías de seguros médicos para facilitarte el acceso a mis servicios en Motril.</p>
+                <h2>Aseguradoras Médicas en Motril</h2>
+                <p>Trabajo con las principales compañías de seguros médicos para facilitarte el acceso a mis servicios de salud.</p>
             </div>
             <div class="insurance-logos">
                 <div class="insurance-item" itemprop="acceptsHealthPlans">Adeslas</div>
@@ -306,35 +342,44 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="section contact" style="display: none;">
+    <!-- Contact & Location Section -->
+    <section id="contacto" class="section contact">
         <div class="container contact-container">
-            <div class="contact-info">
-                <h2>Pide tu cita</h2>
-                <p>Estoy aquí para cuidar de ti. No dudes en contactar para reservar tu espacio.</p>
-                <ul>
-                    <li><strong>📍 Dirección:</strong> Calle Río Duero, nº 5 (MOTRIL)</li>
-                    <li><strong>📞 Teléfono:</strong> <a href="tel:+34958876016">958 87 60 16</a></li>
-                    <li><strong>📱 WhatsApp:</strong> <a href="https://wa.me/34623614167">623 61 41 67</a></li>
-                </ul>
-            </div>
-            <div class="contact-form-wrapper">
-                <!-- Simple placeholder form -->
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" required>
+            <div class="contact-info-full">
+                <h2>Pide tu cita y Ubicación</h2>
+                <p>Atiendo en un entorno médico moderno y accesible en el corazón de Motril. Elige el método que te resulte más cómodo para reservar tu espacio.</p>
+                
+                <div class="contact-methods-grid">
+                    <a href="tel:+34958876016" class="contact-method-card">
+                        <span class="method-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+                        <div class="method-details">
+                            <h3>Llamar por teléfono</h3>
+                            <p>958 87 60 16</p>
+                            <span class="method-action">Llamar ahora</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/34623614167" class="contact-method-card">
+                        <span class="method-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span>
+                        <div class="method-details">
+                            <h3>Mensaje WhatsApp</h3>
+                            <p>623 61 41 67</p>
+                            <span class="method-action">Enviar mensaje</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="clinic-integration">
+                    <div class="clinic-details-merged">
+                        <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Ubicación:</strong> Calle Río Duero, nº 5, Motril (Granada)</p>
+                        <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Horario:</strong> Lun-Vie: 9:00-13:00 y 16:00-20:00 | Sáb: 10:00-12:00</p>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" id="phone" name="phone" required>
+                    <div class="clinic-link-wrapper">
+                        <a href="https://contigocentromedico.familia-jimenez.es/" target="_blank" class="btn btn-outline">
+                            <span class="btn-icon">🏥</span> Visitar web de Contigo Centro Médico
+                        </a>
+                        <p class="clinic-note-small">Pide tu cita directamente en el centro o contacta conmigo.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
@@ -348,21 +393,21 @@
             </div>
             <div class="social-links">
                 <a href="https://instagram.com/beatriz.tumedicadefamilia" target="_blank" class="social-link">
-                    <span class="social-icon">📸</span>
+                    <span class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span>
                     <div class="social-info">
                         <h3>Instagram</h3>
                         <p>@beatriz.tumedicadefamilia</p>
                     </div>
                 </a>
                 <a href="#" target="_blank" class="social-link">
-                    <span class="social-icon">💼</span>
+                    <span class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></span>
                     <div class="social-info">
                         <h3>LinkedIn</h3>
                         <p>Próximamente</p>
                     </div>
                 </a>
                 <a href="#" target="_blank" class="social-link">
-                    <span class="social-icon">📘</span>
+                    <span class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></span>
                     <div class="social-info">
                         <h3>Facebook</h3>
                         <p>Próximamente</p>
@@ -372,69 +417,23 @@
         </div>
     </section>
 
-    <!-- Location Section -->
-    <section id="ubicacion" class="section location">
-        <div class="container">
-            <div class="section-header">
-                <h2>¿Dónde encontrarme?</h2>
-                <p>Atiendo en un entorno médico moderno y accesible en el corazón de Motril.</p>
-            </div>
-            <div class="location-content">
-                <div class="clinic-card">
-                    <div class="clinic-header">
-                        <span class="clinic-icon">🏥</span>
-                        <div class="clinic-info">
-                            <h3>Contigo Centro Médico</h3>
-                            <p class="clinic-type">Centro de salud integral</p>
-                        </div>
-                    </div>
-                    <div class="clinic-details">
-                        <div class="detail-item">
-                            <span class="detail-icon">📍</span>
-                            <div class="detail-text">
-                                <h4>Ubicación</h4>
-                                <p>Calle Río Duero, nº 5, Motril, Granada</p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">⏰</span>
-                            <div class="detail-text">
-                                <h4>Horario</h4>
-                                <p>Lunes a Viernes: 9:00 - 13:00 y 16:00 - 20:00</p>
-                                <p>Sábados: 10:00 - 12:00</p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">📞</span>
-                            <div class="detail-text">
-                                <h4>Contacto</h4>
-                                <p>958 87 60 16 | WhatsApp: 623 61 41 67</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clinic-actions">
-                        <a href="https://contigocentromedico.familia-jimenez.es/" target="_blank" class="btn btn-primary btn-block">
-                            <span class="btn-icon">🌐</span>
-                            Visitar web del centro
-                        </a>
-                        <p class="clinic-note">
-                            <small>Pide tu cita directamente en el centro o contacta conmigo para más información.</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Dra. Beatriz Jiménez Canet. Todos los derechos reservados. | 
-               <a href="#sobre-mi">Sobre mí</a> | 
-               <a href="#servicios">Servicios</a> | 
-               <a href="#aseguradoras">Aseguradoras</a> | 
-               <a href="tel:+34958876016">Contacto</a>
-            </p>
+            <div class="footer-content">
+                <p>&copy; 2026 Dra. Beatriz Jiménez Canet. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#sobre-mi">Sobre mí</a> | 
+                    <a href="#servicios">Servicios</a> | 
+                    <a href="aviso-legal.html">Aviso legal</a> | 
+                    <a href="politica-privacidad.html">Privacidad</a> | 
+                    <a href="politica-cookies.html">Cookies</a>
+                </div>
+                <div class="footer-professional">
+                    <p><small>Responsable Sanitario: Dra. Beatriz Jiménez Canet | Nº Colegiada: [Añadir] | CIF: [Añadir CIF Centro]</small></p>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -11,6 +11,44 @@
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.footer {
+    padding: 4rem 0 2rem;
+    background-color: var(--text-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--white);
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.footer-professional {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
 /* Global Styles */
 * {
     margin: 0;
@@ -101,6 +139,29 @@ h2 {
 .btn-primary:hover {
     background-color: transparent;
     color: var(--primary-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-btns {
+        justify-content: center;
+    }
 }
 
 /* Navbar */
@@ -646,7 +707,13 @@ h2 {
 }
 
 .btn-icon {
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-icon svg {
+    stroke-width: 2.5px;
 }
 
 .clinic-note {
@@ -657,9 +724,84 @@ h2 {
 
 /* Contact */
 .contact-container {
+    max-width: 900px;
+}
+
+.contact-info-full {
+    text-align: center;
+    width: 100%;
+}
+
+.contact-methods-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-method-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.contact-method-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(143, 163, 145, 0.2);
+}
+
+.method-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.method-details p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.method-action {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact-method-card:hover .method-action {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.contact-address-info {
+    font-size: 1.1rem;
+    color: #666;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .contact-info ul {
@@ -752,6 +894,30 @@ h2 {
     left: 100%;
 }
 
+.clinic-integration {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.clinic-details-merged {
+    margin-bottom: 2rem;
+}
+
+.clinic-details-merged p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.clinic-link-wrapper {
+    margin-top: 1.5rem;
+}
+
+.clinic-note-small {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+}
 .social-link:hover {
     transform: translateY(-8px);
     border-color: var(--primary-color);
@@ -761,13 +927,20 @@ h2 {
 .social-icon {
     font-size: 2.5rem;
     margin-right: 1.5rem;
-    color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
     transition: var(--transition);
 }
 
 .social-link:hover .social-icon {
-    transform: scale(1.1);
-    color: #7a8e7c;
+    transform: scale(1.1) rotate(5deg);
+    background: var(--primary-color);
+    color: var(--white);
 }
 
 .social-info {
@@ -842,13 +1015,6 @@ h2 {
     border-left-color: var(--primary-color);
 }
 
-/* Footer */
-.footer {
-    background-color: var(--text-color);
-    color: var(--white);
-    text-align: center;
-    padding: 2rem 0;
-}
 
 /* Responsive */
 @media (max-width: 1024px) {
