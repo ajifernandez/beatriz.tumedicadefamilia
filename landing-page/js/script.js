@@ -152,3 +152,37 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+// Cookie Consent Banner Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const rejectBtn = document.getElementById('reject-cookies');
+
+    // Show banner after a short delay if no choice has been made
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 1500);
+    }
+
+    const setConsent = (choice) => {
+        localStorage.setItem('cookieConsent', choice);
+        cookieBanner.classList.remove('show');
+        
+        // Push event to Data Layer for GTM
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'cookie_consent_update',
+            'consent_level': choice
+        });
+    };
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', () => setConsent('accepted'));
+    }
+
+    if (rejectBtn) {
+        rejectBtn.addEventListener('click', () => setConsent('rejected'));
+    }
+});
