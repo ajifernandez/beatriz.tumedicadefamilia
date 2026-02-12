@@ -154,15 +154,16 @@
     <link rel="dns-prefetch" href="//placehold.co">
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="preload" href="js/main.js" as="script">
+    <link rel="preload" href="css/styles.css?v=1.2" as="style">
+    <link rel="preload" href="js/script.js?v=1.2" as="script">
     
     <!-- Preload Fonts (Self-hosting recommended for best performance) -->
     <!-- <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin> -->
     <!-- <link rel="preload" href="fonts/playfair-display-bold.woff2" as="font" type="font/woff2" crossorigin> -->
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css?v=1.2">
     
     <!-- Critical CSS (inline for faster rendering) -->
     <style>
@@ -443,13 +444,13 @@
         window.addEventListener('load', function() {
             // Load main script
             var script1 = document.createElement('script');
-            script1.src = 'js/script.js';
+            script1.src = 'js/script.js?v=1.2';
             script1.async = true;
             document.body.appendChild(script1);
             
             // Load reviews script
             var script2 = document.createElement('script');
-            script2.src = 'js/reviews.js';
+            script2.src = 'js/reviews.js?v=1.2';
             script2.async = true;
             document.body.appendChild(script2);
         });
@@ -457,7 +458,7 @@
         // Service Worker for PWA capabilities (optional)
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').catch(function() {
+                navigator.serviceWorker.register('sw.js?v=1.2').catch(function() {
                     // Service worker registration failed, but that's okay
                 });
             });
