@@ -13,12 +13,12 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/hero.jpg</image:loc>
+            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/hero.webp</image:loc>
             <image:title>Dra. Beatriz Jiménez Canet - Médica de Familia en Motril</image:title>
             <image:caption>Dra. Beatriz Jiménez Canet - Especialista en Medicina Familiar y Comunitaria</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/reception.jpg</image:loc>
+            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/reception.webp</image:loc>
             <image:title>Consulta Médica en Motril</image:title>
             <image:caption>Espacio acogedor y profesional para tu atención médica personalizada</image:caption>
         </image:image>
