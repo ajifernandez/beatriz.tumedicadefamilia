@@ -5,13 +5,7 @@ Allow: /
 Sitemap: https://beatriztumedicadefamilia.familia-jimenez.es/sitemap.xml
 
 # Block common non-content paths
-Disallow: /css/
-Disallow: /js/
-Disallow: /images/
-Disallow: /*.jpg$
-Disallow: /*.png$
-Disallow: /*.gif$
-Disallow: /*.svg$
+Disallow:
 
 # Allow search engines to crawl images for image search
 User-agent: Googlebot-Image
