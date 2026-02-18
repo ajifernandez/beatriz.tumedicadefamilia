@@ -23,7 +23,7 @@ Este sitio web está diseñado para ofrecer información profesional sobre la Dr
 - **Optimización**: Imágenes optimizadas, carga diferida
 - **SEO**: Metaetiquetas, Schema.org, sitemap.xml
 - **Despliegue**: Netlify (configurado con netlify.toml)
-- **Dominio**: beatriztumedicadefamilia.familia-jimenez.es
+- **Dominio**: www.beatriztumedicadefamilia.es
 
 ## Estructura del Proyecto
 
@@ -64,7 +64,7 @@ python -m http.server 8000
 
 ### Despliegue en Producción
 
-El sitio está configurado para despliegue automático en Netlify con el dominio personalizado `beatriztumedicadefamilia.familia-jimenez.es`.
+El sitio está configurado para despliegue automático en Netlify con el dominio personalizado `www.beatriztumedicadefamilia.es`.
 
 Configuración de despliegue en `netlify.toml`:
 - Redirección de HTTP a HTTPS
