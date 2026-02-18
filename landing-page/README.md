@@ -12,7 +12,7 @@ Una presencia digital profesional que refleje la calidez y profesionalidad de la
 
 1. **Crear cuenta en Netlify**
 2. **Conectar repositorio GitHub**
-3. **Configurar dominio**: `beatriztumedicadefamilia.com`
+3. **Configurar- **Dominio**: www.beatriztumedicadefamilia.es
 4. **Deploy automático** con cada push
 
 ### 📁 Estructura
