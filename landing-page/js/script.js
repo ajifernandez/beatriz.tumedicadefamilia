@@ -61,7 +61,7 @@ document.querySelectorAll('.section').forEach(section => {
 // Social Media Enhanced Interactions
 document.querySelectorAll('.social-link').forEach((link) => {
     link.addEventListener('click', function(e) {
-        if (this.getAttribute('href') === '#') {
+        if (!this.getAttribute('href') || this.getAttribute('href') === '#') {
             e.preventDefault();
 
             const comingSoon = document.createElement('div');

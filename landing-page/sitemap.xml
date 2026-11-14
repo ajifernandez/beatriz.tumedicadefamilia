@@ -13,12 +13,12 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/hero.webp</image:loc>
+            <image:loc>https://www.beatriztumedicadefamilia.es/images/hero.webp</image:loc>
             <image:title>Dra. Beatriz Jiménez Canet - Médica de Familia en Motril</image:title>
             <image:caption>Dra. Beatriz Jiménez Canet - Especialista en Medicina Familiar y Comunitaria</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://beatriztumedicadefamilia.familia-jimenez.es/images/reception.webp</image:loc>
+            <image:loc>https://www.beatriztumedicadefamilia.es/images/reception.webp</image:loc>
             <image:title>Consulta Médica en Motril</image:title>
             <image:caption>Espacio acogedor y profesional para tu atención médica personalizada</image:caption>
         </image:image>
@@ -26,14 +26,14 @@
     
     <!-- Páginas legales -->
     <url>
-        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/aviso-legal.html</loc>
+        <loc>https://www.beatriztumedicadefamilia.es/aviso-legal.html</loc>
         <lastmod>2026-02-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/politica-privacidad.html</loc>
+        <loc>https://www.beatriztumedicadefamilia.es/politica-privacidad.html</loc>
         <lastmod>2026-02-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -41,7 +41,7 @@
     
     <!-- Mapa del sitio para secciones principales (opcional) -->
     <url>
-        <loc>https://beatriztumedicadefamilia.familia-jimenez.es/sitemap.xml</loc>
+        <loc>https://www.beatriztumedicadefamilia.es/sitemap.xml</loc>
         <lastmod>2026-02-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
