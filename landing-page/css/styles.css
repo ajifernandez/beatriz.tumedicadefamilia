@@ -69,6 +69,17 @@ a {
     transition: var(--transition);
 }
 
+/* Inline text links: underlined so they read as links */
+p a, li a, h2 a, h3 a, strong a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Navigation, logo and footer links keep their own style */
+.nav-links a, .logo, .footer a {
+    text-decoration: none;
+}
+
 ul {
     list-style: none;
 }
@@ -534,6 +545,16 @@ h2 {
     padding: 1rem 2rem;
     border: 2px solid #eee;
     border-radius: 10px;
+}
+
+a.insurance-item {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.insurance-item:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /* Testimonials */
