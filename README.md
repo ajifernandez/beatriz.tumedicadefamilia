@@ -150,7 +150,7 @@ Estos documentos deben mantenerse actualizados según la legislación vigente en
 
 Para consultas sobre el sitio web:
 
-- **Email**: web@beatrizmedicafamilia.com
+- **Email**: info@beatrizmedicafamilia.es
 - **Teléfono**: +34 XXX XXX XXX
 
 ---
