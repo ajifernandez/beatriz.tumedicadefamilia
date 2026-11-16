@@ -1372,3 +1372,53 @@ svg {
 .contact-cta {
     margin: 2.5rem 0 2rem;
 }
+
+/* FAQ Section */
+.faq {
+    background-color: var(--white);
+    padding: 5rem 0;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: var(--accent-color);
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.faq-item p a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        padding: 1.25rem 1.5rem;
+    }
+}
