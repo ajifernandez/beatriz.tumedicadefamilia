@@ -9,9 +9,9 @@ if (hamburger) {
     });
 }
 
-// Logo click to scroll to top
+// Logo click to scroll to top (only if not navigating to /)
 const logo = document.querySelector('.logo');
-if (logo) {
+if (logo && logo.getAttribute('href') === '#') {
     logo.addEventListener('click', (e) => {
         e.preventDefault();
         window.scrollTo({
@@ -22,19 +22,14 @@ if (logo) {
 }
 
 // Smooth Scrolling for Anchors
+// Note: CSS scroll-behavior: smooth handles smooth scrolling natively.
+// This JS only closes the mobile menu when a nav link is clicked.
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-            // Close mobile menu if open
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('active');
-            }
+        // Close mobile menu if open
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
         }
     });
 });
@@ -61,7 +56,7 @@ document.querySelectorAll('.section').forEach(section => {
 // Social Media Enhanced Interactions
 document.querySelectorAll('.social-link').forEach((link) => {
     link.addEventListener('click', function(e) {
-        if (!this.getAttribute('href') || this.getAttribute('href') === '#') {
+        if (this.hasAttribute('aria-disabled') && this.getAttribute('aria-disabled') === 'true') {
             e.preventDefault();
 
             const comingSoon = document.createElement('div');
