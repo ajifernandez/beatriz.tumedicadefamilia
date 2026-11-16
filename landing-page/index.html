@@ -33,6 +33,11 @@
     <meta property="twitter:image" content="https://www.beatriztumedicadefamilia.es/images/hero-1200.webp">
     <meta property="twitter:image:alt" content="Dra. Beatriz Jiménez Canet - Médica de Familia">
     
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-527SX4MQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.beatriztumedicadefamilia.es/">
     
@@ -164,19 +169,13 @@
     }
     </script>
     
-    <!-- Self-hosted fonts (no Google requests) -->
-    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Self-hosted fonts (no Google requests) - non-render-blocking -->
+    <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="css/styles.css?v=1.4" as="style">
-        
-    <!-- Preload Fonts (Self-hosting recommended for best performance) -->
-    <!-- <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin> -->
-    <!-- <link rel="preload" href="fonts/playfair-display-bold.woff2" as="font" type="font/woff2" crossorigin> -->
-    
-    <!-- Stylesheets -->
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css?v=1.4">
+    <!-- Stylesheets - non-render-blocking -->
+    <link rel="preload" href="css/styles.css?v=1.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css?v=1.4"></noscript>
     
     <!-- Critical CSS (inline for faster rendering) -->
     <style>
@@ -198,6 +197,13 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-527SX4MQ');</script>
+    <!-- End Google Tag Manager -->
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -404,7 +410,7 @@
                     <div class="contact-cta"><a href="https://wa.me/34623614167?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20de%20Medicina%20de%20familia%20con%20la%20Dra.%20Beatriz%20Jim%C3%A9nez%20Canet." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Pide tu cita en Contigo</a></div>
 
                     <div class="clinic-map">
-                        <img src="images/mapa.webp" width="2075" height="983" alt="Mapa de la ubicación de la clínica" loading="lazy" decoding="async">
+                        <img src="images/mapa-720.webp" srcset="images/mapa-720.webp 720w, images/mapa.webp 2075w" sizes="(max-width: 768px) 90vw, 720px" width="720" height="341" alt="Mapa de la ubicación de la clínica" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -464,7 +470,7 @@
         </div>
     </footer>
 
-    <!-- Main script -->
+    <!-- Main script (deferred) -->
     <script src="js/script.js?v=1.2" defer></script>
     
 </body>
