@@ -1478,7 +1478,7 @@ svg {
     }
 }
 
-/* FAQ Section */
+/* FAQ Section - Collapsible Accordion */
 .faq {
     background-color: var(--white);
     padding: 5rem 0;
@@ -1489,41 +1489,79 @@ svg {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .faq-item {
     background: var(--accent-color);
     border-radius: 15px;
-    padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
+    overflow: hidden;
     transition: var(--transition);
 }
 
 .faq-item:hover {
-    transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-.faq-item h3 {
+.faq-item summary {
+    font-family: var(--font-heading);
     font-size: 1.15rem;
+    font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: var(--transition);
 }
 
-.faq-item p {
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: '−';
+}
+
+.faq-item summary:hover {
+    color: var(--text-color);
+}
+
+.faq-answer {
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.faq-answer p {
     color: var(--text-color);
     line-height: 1.7;
     margin-bottom: 0;
 }
 
-.faq-item p a {
+.faq-answer p a {
     color: var(--primary-color);
     font-weight: 600;
 }
 
 @media (max-width: 768px) {
-    .faq-item {
-        padding: 1.25rem 1.5rem;
+    .faq-item summary {
+        padding: 1rem 1.5rem;
+        font-size: 1.05rem;
+    }
+    .faq-answer {
+        padding: 0 1.5rem 1.25rem 1.5rem;
     }
 }
