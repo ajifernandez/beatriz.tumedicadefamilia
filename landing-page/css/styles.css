@@ -302,6 +302,7 @@ h2 {
     padding: 4rem 0;
     position: relative;
     overflow: hidden;
+    min-height: 80vh;
 }
 
 .hero-container {
@@ -319,6 +320,8 @@ h2 {
 .hero-image {
     flex: 1;
     position: relative;
+    min-height: 400px;
+    contain: layout;
 }
 
 .hero-image img {
@@ -327,6 +330,7 @@ h2 {
     border: 5px solid var(--white);
     aspect-ratio: 600 / 800;
     object-fit: cover;
+    width: 100%;
 }
 
 /* About Section */
@@ -1211,6 +1215,10 @@ svg {
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
+    }
+    
+    .hero-image {
+        min-height: 300px;
     }
 
     .about-container {
